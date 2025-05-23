@@ -1,12 +1,36 @@
+import { Product } from '@/models/Product';
+import { Button, Card, Text } from '@ui-kitten/components';
 import React from 'react';
-import { Card, Text, Button } from 'react-native-elements';
+import { Image, StyleSheet } from 'react-native';
 
-export const ProductCard = ({ product, onPress }) => (
-    <Card>
-        <Card.Image source={product.image} style={{ height: 200 }} />
-        <Card.Divider />
-        <Text style={{ fontWeight: 'bold' }}>{product.name}</Text>
-        <Text style={{ marginBottom: 10 }}>{product.price}</Text>
-        <Button title="View" onPress={onPress} />
+interface ProductCardProps {
+    product: Product
+    onPress: () => void
+}
+
+export const ProductCard: React.FC<ProductCardProps> = ({ product, onPress }) => (
+    <Card style={styles.container}>
+        <Image
+            source={{
+                uri: product.image,
+            }}
+            style={styles.image}
+            resizeMode='cover'
+        />
+        <Text>{product.name}</Text>
+        <Text>{product.price}</Text>
+        <Button onPress={onPress}>
+            View
+        </Button>
     </Card>
 );
+
+const styles = StyleSheet.create({
+    container: {
+        marginVertical: 8,
+    },
+    image: {
+        height: 200,
+        width: '100%',
+    }
+});
