@@ -29,10 +29,15 @@ const ProductScreen: React.FC<ProductScreenProps> = ({ route }) => {
                 accessibilityLabel={`Image of ${product.name}`}
             />
             <View style={styles.detailsContainer}>
-                <View>
-                    <Text category='h5' style={styles.productName}>{product.name}</Text>
-                    <Text category='s1' style={styles.productPrice}>{product.price}</Text>
-                </View>
+                <Text category="h5" style={styles.productName}>
+                    {product.name}
+                </Text>
+                <Text category="s1" style={styles.productPrice}>
+                    {product.price}
+                </Text>
+                <Text category="p2" style={styles.productDescription}>
+                    {product.description}
+                </Text>
             </View>
             <ProductPopOver
                 product={product}
@@ -42,7 +47,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({ route }) => {
             />
         </Layout>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -57,13 +62,22 @@ const styles = StyleSheet.create({
     },
     detailsContainer: {
         flex: 1,
-        justifyContent: 'space-between',
     },
     productName: {
+        fontWeight: 'bold',
         marginBottom: 10,
     },
     productPrice: {
+        color: '#888',
+        marginBottom: 10,
+    },
+    productDescription: {
+        color: '#666',
+        lineHeight: 20,
         marginBottom: 20,
+    },
+    addToCartButton: {
+        marginTop: 20,
     },
 });
 

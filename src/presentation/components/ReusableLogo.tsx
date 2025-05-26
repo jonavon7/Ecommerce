@@ -26,7 +26,7 @@ const LogoComponent: React.FC<LogoProps> = ({ size }) => {
     return (
         <View>
             <Image
-                source={require('@/presentation/assets/logo.png')}
+                source={require('@/../assets/logo.png')}
                 style={{
                     width: getSize(),
                     height: getSize(),

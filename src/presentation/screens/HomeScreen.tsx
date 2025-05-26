@@ -19,11 +19,6 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate(RouteName.Product, { product: item })}
                     />
                 )}
-                getItemLayout={(data, index) => ({
-                    length: 100,
-                    offset: 100 * index,
-                    index,
-                })}
                 accessibilityLabel="Product List"
                 ListEmptyComponent={<EmptyComponent message="No products available." />}
             />
