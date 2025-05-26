@@ -6,7 +6,7 @@ import { StyleSheet } from 'react-native';
 import { RouteName } from '@/navigation/RouteName';
 import { EmptyComponent } from '../components/EmptyComponent';
 
-export default function HomeScreen({ navigation }) {
+const HomeScreen = ({ navigation }) => {
     return (
         <Layout style={styles.container}>
             <List
@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
                     index,
                 })}
                 accessibilityLabel="Product List"
-                ListEmptyComponent={EmptyComponent}
+                ListEmptyComponent={<EmptyComponent message="No products available." />}
             />
         </Layout>
     );
@@ -41,3 +41,5 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
     },
 });
+
+export default HomeScreen;

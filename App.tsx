@@ -6,6 +6,7 @@ import { default as theme } from '@/presentation/theme/custom-theme.json';
 import { useColorScheme } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { FeatherIconsPack } from '@/presentation/theme/utils/feather-icons';
+import GlobalContextProvider from '@/context/GlobalContextProvider';
 
 export default function App() {
   const colorScheme = useColorScheme();
@@ -16,13 +17,15 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
-        <IconRegistry icons={FeatherIconsPack} />
-        <ApplicationProvider {...eva} theme={{
-          ...(colorScheme === 'dark' ? eva.dark : eva.light),
-          ...theme
-        }}>
-          <AppNavigator />
-        </ApplicationProvider>
+        <GlobalContextProvider>
+          <IconRegistry icons={FeatherIconsPack} />
+          <ApplicationProvider {...eva} theme={{
+            ...(colorScheme === 'dark' ? eva.dark : eva.light),
+            ...theme
+          }}>
+            <AppNavigator />
+          </ApplicationProvider>
+        </GlobalContextProvider>
       </SafeAreaView>
     </SafeAreaProvider>
   );

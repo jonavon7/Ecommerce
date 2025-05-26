@@ -1,10 +1,14 @@
 import { Text } from "@ui-kitten/components";
-import React from "react";
+import React, { memo } from "react";
 import { StyleSheet, View } from "react-native";
 
-export const EmptyComponent = () => (
+interface EmptyComponentProps {
+    message: string;
+}
+
+const EmptyComponent_: React.FC<EmptyComponentProps> = ({ message }) => (
     <View style={styles.EmptyComponentContainer}>
-        <Text style={styles.EmptyComponentText}>No products available.</Text>
+        <Text category="s1" appearance='hint'>{message}</Text>
     </View>
 );
 
@@ -14,8 +18,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    EmptyComponentText: {
-        fontSize: 18,
-        color: '#888',
-    },
 });
+
+export const EmptyComponent = memo(EmptyComponent_);

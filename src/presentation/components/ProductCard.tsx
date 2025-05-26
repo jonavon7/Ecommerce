@@ -1,6 +1,6 @@
 import { Product } from '@/models/Product';
 import { Button, Card, Text } from '@ui-kitten/components';
-import React from 'react';
+import React, { memo } from 'react';
 import { Image, StyleSheet } from 'react-native';
 
 interface ProductCardProps {
@@ -8,7 +8,7 @@ interface ProductCardProps {
     onPress: () => void
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ product, onPress }) => (
+const ProductCardComponent: React.FC<ProductCardProps> = ({ product, onPress }) => (
     <Card style={styles.container}>
         <Image
             source={{
@@ -17,8 +17,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onPress }) =>
             style={styles.image}
             resizeMode='cover'
         />
-        <Text>{product.name}</Text>
-        <Text>{product.price}</Text>
+        <Text category='s1'>{product.name}</Text>
+        <Text category='s1' appearance='hint'>{product.price}</Text>
         <Button onPress={onPress}>
             View
         </Button>
@@ -34,3 +34,5 @@ const styles = StyleSheet.create({
         width: '100%',
     }
 });
+
+export const ProductCard = memo(ProductCardComponent);
