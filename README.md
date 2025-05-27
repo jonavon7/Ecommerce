@@ -79,13 +79,13 @@ ecommerce-app/
 ## Screenshots
 
 ### Home Screen
-![Screenshot_2025-05-26-23-20-56-357_host exp exponent](https://github.com/user-attachments/assets/2b645f88-d028-453f-9600-80d91b8a0408)
+<img src="https://github.com/user-attachments/assets/2b645f88-d028-453f-9600-80d91b8a0408" height="500" />
 
 ### Product Details
-![Screenshot_2025-05-26-23-21-30-895_host exp exponent](https://github.com/user-attachments/assets/a0b92073-1c8b-4558-bbc7-08f218f3b2ee)
+<img src="https://github.com/user-attachments/assets/a0b92073-1c8b-4558-bbc7-08f218f3b2ee" height="500" />
 
 ### Cart
-![Screenshot_2025-05-26-23-21-53-184_host exp exponent](https://github.com/user-attachments/assets/03619bd4-1d81-457a-b821-b892a32d5a76)
+<img src="https://github.com/user-attachments/assets/03619bd4-1d81-457a-b821-b892a32d5a76" height="500" />
 
 ---
 
@@ -119,7 +119,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
    git commit -m "Add your message here"
    ```
 4. Push to your branch:
-   ```bash
+   ```sh
    git push origin feature/your-feature-name
    ```
 5. Open a pull request.
