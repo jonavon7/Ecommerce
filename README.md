@@ -1,61 +1,63 @@
-# E-Commerce App
+# 📱 E-Commerce App
 
 An elegant and user-friendly e-commerce mobile application built with **React Native** and **UI Kitten**. This app allows users to browse products, view product details, add items to the cart, and proceed with their shopping journey.
 
 ---
 
-## Features
+## 🚀 Features
 
 - **Product Listing**: Display a list of surf-related products with images, prices, and descriptions.
 - **Product Details**: View detailed information about a product, including a large image, price, and description.
 - **Add to Cart**: Add products to the cart and view the total price dynamically.
 - **Responsive Design**: Optimized for various screen sizes with a clean and modern UI.
+- **Dark Mode**: Seamlessly switch between light and dark themes.
 - **Lazy Loading Images**: Images are loaded efficiently with a spinner for better performance.
 - **Customizable Splash Screen and App Icon**: Personalized branding with a custom logo.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **React Native**: Framework for building cross-platform mobile apps.
 - **UI Kitten**: Component library for a consistent and customizable design system.
 - **React Navigation**: Navigation library for managing screens and stacks.
 - **TypeScript**: Strongly typed programming language for better code quality.
+- **Styling**: Custom themes for light and dark modes
 - **Pexels**: Free high-quality images for product visuals.
 
 ---
 
-## Installation
+## 📖 Installation
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/your-username/ecommerce-app.git
    cd ecommerce-app
    ```
 
 2. Install dependencies:
-   ```bash
+   ```sh
    npm install
    ```
 
 3. Start the Metro bundler:
-   ```bash
+   ```sh
    npm start
    ```
 
 4. Run the app:
    - For iOS:
-     ```bash
+     ```sh
      npx react-native run-ios
      ```
    - For Android:
-     ```bash
+     ```sh
      npx react-native run-android
      ```
 
 ---
 
-## Project Structure
+## 🧩 Project Structure
 
 ```
 ecommerce-app/
@@ -77,13 +79,13 @@ ecommerce-app/
 ## Screenshots
 
 ### Home Screen
-![Home Screen](https://via.placeholder.com/300x600?text=Home+Screen)
+![Screenshot_2025-05-26-23-20-56-357_host exp exponent](https://github.com/user-attachments/assets/2b645f88-d028-453f-9600-80d91b8a0408)
 
 ### Product Details
-![Product Details](https://via.placeholder.com/300x600?text=Product+Details)
+![Screenshot_2025-05-26-23-21-30-895_host exp exponent](https://github.com/user-attachments/assets/a0b92073-1c8b-4558-bbc7-08f218f3b2ee)
 
 ### Cart
-![Cart](https://via.placeholder.com/300x600?text=Cart)
+![Screenshot_2025-05-26-23-21-53-184_host exp exponent](https://github.com/user-attachments/assets/03619bd4-1d81-457a-b821-b892a32d5a76)
 
 ---
 
@@ -103,16 +105,17 @@ Dummy data for development, easily replaceable with an API or database.
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
 1. Fork the repository.
 2. Create a new branch:
-   ```bash
+   ```sh
    git checkout -b feature/your-feature-name
    ```
 3. Commit your changes:
-   ```bash
+   ```sh
    git commit -m "Add your message here"
    ```
 4. Push to your branch:
@@ -123,14 +126,26 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Acknowledgments
+## 🌟 Acknowledgments
 
 - [Pexels](https://pexels.com)
 - [UI Kitten](https://akveo.github.io/react-native-ui-kitten/) for the design system.
 - [React Native](https://reactnative.dev/) for the mobile app framework.
+
+---
+
+## 📬 Contact
+
+For questions or feedback, feel free to reach out:
+
+- **GitHub**: [jonavon7](https://github.com/jonavon7)
+
+---
+
+Happy coding! 🚀
